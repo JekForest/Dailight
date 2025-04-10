@@ -1,11 +1,11 @@
 import './App.less';
+import { HashRouter } from 'react-router-dom';
+import RouterView from './router';
 
-function App() {
-  return (
-    <div className='box'>
-      你好 Dailight
-    </div>
-  );
-}
+const App = function App() {
+  return <HashRouter>
+    <RouterView />
+  </HashRouter>;
+};
 
 export default App;
