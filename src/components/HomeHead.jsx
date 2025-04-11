@@ -3,7 +3,7 @@ import timg from '../assets/images/timg.jpg';
 import './HomeHead.less';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { queryUserInfoAsync } from '../store/reducer/base';
+import { queryUserInfoAsync } from '../store/slices/baseSlice';
 
 const HomeHead = () => {
     const navigate = useNavigate();
@@ -33,7 +33,7 @@ const HomeHead = () => {
                 <span>{time.day}</span>
                 <span>{time.month}</span>
             </div>
-            <h2 className="title">知乎日报</h2>
+            <h2 className="title">Dailight</h2>
         </div>
 
         <div className="picture"
